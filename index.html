@@ -14,24 +14,22 @@
   <body>
     <div class="container">
       <!-- variable -->
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-md-10">
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
           <h4 class="text-primary"># variable</h4>
         </div>
-        <div class="col-md-10">
-          <div class="bg-dark pt-5 fs-4 border rounded-3">
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
             <code>
-              <pre>
-                students_count = 1000<br>
-                rating = 4.99<br>
-                is_published = False<br>
-                course_name = """<br>
-                This is<br>
-                Python<br>
-                """<br>
-                x, y = 1, 2<br>
-                x = y = 100
-              </pre>
+              students_count = 1000<br />
+              rating = 4.99<br />
+              is_published = False<br />
+              course_name = """<br />
+              This is<br />
+              Python<br />
+              """<br />
+              x, y = 1, 2<br />
+              x = y = 100
             </code>
           </div>
         </div>
@@ -39,22 +37,20 @@
       <!-- variable -->
 
       <!-- dynamic typing -->
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-md-10">
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
           <h4 class="text-primary"># dynamic typing</h4>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <ol>
             <li>
               in dynamic programming type of variable is determined at run time
             </li>
           </ol>
-          <div class="bg-dark pt-5 fs-4 border rounded-3">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
             <code>
-              <pre>
-                students_count = 1000<br>
-                print(type(students_count))
-              </pre>
+              students_count = 1000<br />
+              print(type(students_count))
             </code>
           </div>
         </div>
@@ -62,23 +58,16 @@
       <!-- dynamic typing -->
 
       <!-- type annotation / type hinting -->
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-md-10">
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
           <h4 class="text-primary"># type annotation / type hinting</h4>
         </div>
-        <div class="col-md-10">
-          <ol>
-            <li>
-              in dynamic programming type of variable is determined at run time
-            </li>
-          </ol>
-          <div class="bg-dark pt-5 fs-4 border rounded-3">
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
             <code>
-              <pre>
-                age: int = 20<br>
-                age = "Python"<br>
-                print(age)
-              </pre>
+              age: int = 20<br />
+              age = "Python"<br />
+              print(age)
             </code>
           </div>
         </div>
@@ -86,27 +75,21 @@
       <!-- type annotation / type hinting -->
 
       <!-- mutable / immutable -->
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-md-10">
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
           <h4 class="text-primary"># mutable / immutable</h4>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <ol>
             <li>string, integer, float, boolean are immutable</li>
           </ol>
-          <div class="bg-dark pt-5 fs-4 border rounded-3">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
             <code>
-              <pre>
-                x = 1<br>
-                print(id(x))<br>
-                x = x + 1<br>
-                print(id(x))
-
-                x = [1, 2, 3]
-                print(id(x))
-                x.append(4)
-                print(id(x))
-              </pre>
+              x = 1<br />
+              print(id(x))<br />
+              x = x + 1<br />
+              print(id(x)) x = [1, 2, 3] // list is mutable print(id(x))
+              x.append(4) print(id(x))
             </code>
           </div>
         </div>
@@ -114,36 +97,241 @@
       <!-- mutable / immutable -->
 
       <!-- list -->
-      <div class="row d-flex justify-content-center py-5">
-        <div class="col-md-10">
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
           <h4 class="text-primary"># list</h4>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <ol>
             <li>list is mutable</li>
           </ol>
-          <div class="bg-dark pt-5 fs-4 border rounded-3">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
             <code>
-              <pre>
-                x = 1<br>
-                print(id(x))<br>
-                x = x + 1<br>
-                print(id(x))
-              </pre>
+              x = 1<br />
+              print(id(x))<br />
+              x = x + 1<br />
+              print(id(x))
             </code>
           </div>
         </div>
       </div>
       <!-- list -->
 
-      <!-- Javascript Runtime -->
+      <!-- formatted string -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># formatted string</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              first_name = "Tarikul"<br />
+              last_name = "Islam"<br />
+              full_name = f"{first_name} {last_name}"<br />
+              print(full_name)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- formatted string -->
+
+      <!-- string methods -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># string methods</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              course = "Python Programming"<br />
+              print(course.upper())<br />
+              print(course.lower())<br />
+              print(course.title())<br />
+              print(course.strip())<br />
+              print(course.find("pro"))<br />
+              print(course.replace("P", "-"))<br />
+              print("Programming" in course)<br />
+              print("Programming" not in course)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- string methods -->
+
+      <!-- numbers -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># numbers</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              x = 10<br />
+              x = ob10<br />
+              print(bin(x)) // bin() used for binary representation of a
+              number<br />
+              x = ox12c<br />
+              print(hex(x)) // hex() used for hexadecimal representation of a
+              number<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- numbers -->
+
+      <!-- arithmatic operators -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># arithmatic operators</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              x = 10 // 3 // absoulate value of answer after division<br />
+              x = 10 % 3 // remaining value after division<br />
+              x = 10 ** 3 // power of<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- arithmatic operators -->
+
+      <!-- type conversion -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># type conversion</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>python is a strongly typed language.</li>
+            <li>python does not do any implicit type conversion.</li>
+            <li>we have to do type conversion explicitly.</li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              int(x)<br />
+              float(x)<br />
+              bool(x)<br />
+              str(x)<br />
+
+              # [ Falsy / "" / 0 / [] / None (null) ] all are false
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- type conversion -->
+
+      <!-- ternary operator -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># ternary operator</h4>
+        </div>
+        <div class="col-md-12 text-center my-2">
+          <img src="img/1.png" alt="" class="text-center img-thumbnail" />
+        </div>
+      </div>
+      <!-- ternary operator -->
+
+      <!-- loops -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># loops</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>python has 2 types of loops ( for & while ).</li>
+            <li>range() take small amount of memory.</li>
+          </ol>
+        </div>
+        <div class="col-md-12 text-center my-2">
+          <h6>for loop</h6>
+          <img src="img/2.png" alt="" class="text-center img-thumbnail" />
+        </div>
+        <div class="col-md-12 text-center my-2">
+          <h6>forelse loop</h6>
+          <img src="img/3.png" alt="" class="text-center img-thumbnail" />
+        </div>
+        <div class="col-md-12 text-center my-2">
+          <h6>while loop</h6>
+          <img src="img/4.png" alt="" class="text-center img-thumbnail" />
+        </div>
+      </div>
+      <!-- loops -->
+
+      <!-- function -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># function</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>() is tuple and it's a read only list.</li>
+            <li>[] is list and we can read & write list.</li>
+            <li>{} is dictionary.</li>
+          </ol>
+          <div class="col-md-12 text-center my-2">
+            <h6>normal function</h6>
+            <img src="img/5.png" alt="" class="text-center img-thumbnail" />
+          </div>
+          <div class="col-md-12 text-center my-2">
+            <h6>multiple function args</h6>
+            <img src="img/6.png" alt="" class="text-center img-thumbnail" />
+          </div>
+          <div class="col-md-12 text-center my-2">
+            <h6>args as key => value pair</h6>
+            <img src="img/7.png" alt="" class="text-center img-thumbnail" />
+          </div>
+        </div>
+      </div>
+      <!-- function -->
+
+      <!-- scope -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># scope</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>python has functional scope</li>
+          </ol>
+          <div class="col-md-12 text-center my-2">
+            <img src="img/8.png" alt="" class="text-center img-thumbnail" />
+          </div>
+        </div>
+      </div>
+      <!-- scope -->
+
+      <!-- optimize code -->
       <!-- <div class="row d-flex justify-content-center py-5">
         <div class="col-md-10 text-center">
+          <h1 class="text-uppercase text-primary border-bottom border-4">
+            Optimize code (webAssembly)
+          </h1>
+        </div>
+        <div class="col-md-10 text-center my-5">
+          <img src="img/3.png" alt="" class="text-center" />
+        </div>
+        <div class="col-md-10">
+          <ul class="text-xl fs-3">
+            <li>WebAssembly is binary executable format.</li>
+            <li>It compiles code to webAssembly which is executable.</li>
+            <li>
+              So it can execute the code fast directly in the browser and no
+              need to go to Js engine.
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- optimize code -->
+
+      <!-- Javascript Runtime -->
+      <!-- <div class="row d-flex py-5">
+        <div class="col-md-12 text-center">
           <h1 class="text-uppercase text-primary border-bottom border-4">
             PYTHON
           </h1>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-12">
           <ul class="text-xl fs-4">
             <li>PYTHON</li>
           </ul>
