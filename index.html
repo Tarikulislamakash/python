@@ -214,7 +214,7 @@
               bool(x)<br />
               str(x)<br />
 
-              # [ Falsy / "" / 0 / [] / None (null) ] all are false
+              // [ Falsy / "" / 0 / [] / None (null) ] all are false
             </code>
           </div>
         </div>
@@ -402,13 +402,395 @@
               print(numbers)<br />
               <br />
               items = [ ("Product 1", 100), ("Product 2", 90), ("Product 3",
-              120) ] def sort_item(item) return item[1]
-              items.sort(key=sort_item) print(items)
+              120) ] <br /><br />
+              def sort_item(item) <br />
+              &nbsp; &nbsp; return item[1] <br /><br />
+              items.sort(key=sort_item) <br />
+              print(items)
             </code>
           </div>
         </div>
       </div>
       <!-- sorting items in lists -->
+
+      <!-- lambda function -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># lambda function</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              items = [ ("Product 1", 100), ("Product 2", 90), ("Product 3",
+              120) ] <br /><br />
+
+              items.sort(key=lambda item:item[1]) <br />
+              print(items)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- lambda function -->
+
+      <!-- map function -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># map function</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              items = [ ("Product 1", 100), ("Product 2", 90), ("Product 3",
+              120) ] <br /><br />
+
+              prices = list(map(lambda item: item[1], items)) <br />
+              print(prices)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- map function -->
+
+      <!-- filter function -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># filter function</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              items = [ ("Product 1", 100), ("Product 2", 90), ("Product 3",
+              120) ] <br /><br />
+
+              prices = list(filter(lambda item: item[1] >= 100 , items)) <br />
+              print(prices)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- filter function -->
+
+      <!-- list comprehensions -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># list comprehensions</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              items = [ ("Product 1", 100), ("Product 2", 90), ("Product 3",
+              120) ] <br /><br />
+
+              prices = list(map(lambda item: item[1], items)) <br />
+              prices = [item[1] for item in items]<br /><br />
+              prices = list(filter(lambda item: item[1] >= 100 , items))
+              <br />
+              prices = [item for item in items if item[1] >= 100]<br /><br />
+              print(prices)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- list comprehensions -->
+
+      <!-- zip function -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># zip function</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>zip function is used to combine multiple list.</li>
+            <li>inside list every item is tuple.</li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              list1 = [ 1, 2, 3 ] <br />
+              list2 = [ 11, 22, 33 ] <br />
+              list3 = [ a, b, c ] <br /><br />
+
+              print(list(zip(list(list3, list1, list2))))<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- zip function -->
+
+      <!-- stack -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># stack</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>in python we use list as stack.</li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              browsing_session = [] <br />
+              browsing_session.append(1) <br />
+              browsing_session.append(2) <br />
+              browsing_session.append(3)<br /><br />
+
+              print(browsing_session)<br /><br />
+
+              last = browsing_session.pop()<br />
+              print(last) <br />
+              print(browsing_session) <br />
+              print("Redirect", browsing_session[-1]) <br /><br />
+              if not browsing_session: <br />
+              &nbsp; &nbsp; print("disable")<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- stack -->
+
+      <!-- queue -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># queue</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>in python we use list as queue.</li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              from collections import deque <br />
+              queue = deque([]) <br />
+              queue.append(1) <br />
+              queue.append(2) <br />
+              queue.append(3)<br />
+              queue.popleft()<br />
+              print(queue) <br /><br />
+              if not queue: <br />
+              &nbsp; &nbsp; print("empty")<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- queue -->
+
+      <!-- tuple -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># tuple</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>tuple is a read only list.</li>
+            <li>
+              if we use variable value seperate with comma python will treat it
+              as tuple, like ( items = 11, 22, 33 )
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              point = (1, 2, 3) <br />
+              print(point[0:2]) <br />
+              x, y, z = point <br /><br />
+              if 10 in point: <br />
+              &nbsp; &nbsp; print("exist")<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- tuple -->
+
+      <!-- array -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># array</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>
+              "i" is a typecode and used for integer and there are other types
+              of typecode.
+            </li>
+            <li>
+              we can not change value of other types which is defined in array.
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              from array import array <br /><br />
+              numbers = array("i", [1, 2, 3]) <br />
+              numbers.append(4) // add number at the last of array <br />
+              numbers.insert(4) // add number at specific index of array <br />
+              numbers.remove(4) // remove number from array <br />
+              numbers.[0] // access from array <br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- array -->
+
+      <!-- set -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># set</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>
+              set create with {} and also we can use set() function to create
+              set.
+            </li>
+            <li>set is a collection of no duplicate.</li>
+            <li>
+              set is not a ordered list, so we can not access any data with
+              index.
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              numbers = [1, 1, 2, 3, 4]<br />
+              first = set(numbers) <br />
+              second = {1, 4} <br />
+              <br />
+              second.add(5) <br />
+              second.remove(5) <br />
+              len(second) <br /><br />
+              print(first | second) // return union of 2 set, means all common
+              and uncommon data <br />
+              print(first & second) // return all common data <br />
+              print(first - second) // return all uncommon data of first set
+              <br />
+              print(first ^ second) // return all uncommon data of both set
+              <br />
+              print(first) <br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- set -->
+
+      <!-- dictionary -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># dictionary</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>
+              dictionary create with {} and also we can use dict() function to
+              create dictionary.
+            </li>
+            <li>
+              dictionary may have duplicate value and last value will get
+              preference.
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              point = {"x": 1, "y": 2} <br />
+              point = dict(x=1, y=2) <br />
+              point["z"] = 3 // set a value in a dictionary<br />
+              print(point.get("a")) // return none if doesn't exist <br />
+              print(point.get("a", 0)) // set default value if doesn't exist
+              <br />
+              del point["x"] // delete a value from <br />
+              print(point) <br /><br />
+              // loop through the dictionary <br />
+              for key in point: <br />
+              &nbsp; &nbsp; print(key, point[key]) <br /><br />
+              for key, value in point.items(): <br />
+              &nbsp; &nbsp; print(key, value)
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- dictionary -->
+
+      <!-- Comprehensions -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># Comprehensions</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>we use comprehensions instead of map(), filter().</li>
+            <li>
+              for tuple comprehensions does not work, it creates a generator.
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              values = [x * 2 for x in range(5)] // list comprehensions<br />
+              values = {x * 2 for x in range(5)} // set comprehensions<br />
+              values = {x: x * 2 for x in range(5)} // set comprehensions<br />
+              values = (x * 2 for x in range(5)) // tuple comprehensions, it
+              creates a generator<br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- Comprehensions -->
+
+      <!-- generator -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># generator</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>generator does not store value in memory.</li>
+            <li>generator creates a new value in each iteration.</li>
+            <li>
+              we can not get the length of generator, because it generates value
+              in each iteration.
+            </li>
+            <li>
+              generator takes small amount of memory compared to other data
+              structure.
+            </li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              use to get the size of list <br />
+              from sys import getsizeof <br />
+              <br />
+              values = (x * 2 for x in range(10000)) <br />
+              print(values) // output value : 120 <br />
+              <br />
+              values = [x * 2 for x in range(10000)] <br />
+              print(values) // output value : 824464 <br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- generator -->
+
+      <!-- unpacking operator -->
+      <div class="row d-flex py-5">
+        <div class="col-md-12">
+          <h4 class="text-primary"># unpacking operator</h4>
+        </div>
+        <div class="col-md-12">
+          <ol>
+            <li>for unpacking dictionary we use (**)</li>
+            <li>for unpacking other data set we use (*)</li>
+          </ol>
+          <div class="bg-dark p-3 fs-4 border rounded-3">
+            <code>
+              numbers = [1, 2, 3]<br />
+              print(numbers) // output : [1, 2, 3] <br />
+              <br />
+              // unpacking list <br />
+              print(*numbers) // output : 1 2 3 <br />
+              <br />
+              // unpacking dictionary <br />
+              first = {"x": 1, "y": 2} <br />
+              second = {"a": 3, "b": 4} <br />
+              combined = {**first, **second, "z": 8} <br />
+              print(combined) <br />
+            </code>
+          </div>
+        </div>
+      </div>
+      <!-- unpacking operator -->
 
       <!-- optimize code -->
       <!-- <div class="row d-flex justify-content-center py-5">
